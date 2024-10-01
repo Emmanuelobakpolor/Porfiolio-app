@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PortfoilioApp.Pages.NewPage1"
+             Title="Welcome To My Portfolio"
+             BackgroundColor="#333333">
+    <ScrollView>
+        <StackLayout Padding="30" Spacing="25" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+            <!-- Profile Image -->
+            <Frame HasShadow="True" CornerRadius="135" Padding="5" BorderColor="#6200EE" HorizontalOptions="Center">
+                <Image Source="profile.jpg" HeightRequest="200" WidthRequest="200" Aspect="AspectFill"/>
+            </Frame>
+
+            <!-- About Me Section -->
+            <StackLayout Spacing="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="Emmanuel Obakpolor Osaro"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="AntiqueWhite"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="Experienced Software Developer with strong expertise in .NET MAUI, C#, Python, and Web Development. Adept at building responsive, 
+high-performance applications across multiple platforms Passionate about sharing knowledge through tutoring, with a focus on fostering a deep understanding of software development principles.
+                       "
+                       FontSize="18"
+                       TextColor="AliceBlue"
+                       HorizontalTextAlignment="Center" FontFamily="Arial"
+                       LineBreakMode="WordWrap"
+                        HorizontalOptions="Center"
+                   VerticalTextAlignment="Center"/>
+            </StackLayout>
+
+            <!-- Buttons for Navigation -->
+            <StackLayout Padding="10" Spacing="15">
+                <!-- Projects Button -->
+                <Button Text="View Projects"
+                        Clicked="GoToProjectsPage"
+                        BackgroundColor="#6200EE"
+                        TextColor="White"
+                        FontSize="18"
+                        CornerRadius="20"
+                        HeightRequest="50"
+                        HorizontalOptions="FillAndExpand" />
+
+                <!-- Contact Me Button -->
+                <Button Text="Contact Me"
+                        Clicked="GoToContactPage"
+                        BackgroundColor="#03DAC6"
+                        TextColor="White"
+                        FontSize="18"
+                        CornerRadius="20"
+                        HeightRequest="50"
+                        HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

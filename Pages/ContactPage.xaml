@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PortfoilioApp.Pages.ContactPage"
+             Title="ContactPage">
+    <StackLayout Padding="30" Spacing="20" VerticalOptions="CenterAndExpand">
+
+        <!-- Title -->
+        <Label Text="Contact Me"
+               FontSize="30"
+               FontAttributes="Bold"
+               TextColor="#333333"
+               HorizontalTextAlignment="Center" />
+
+        <!-- Social Media Links -->
+        <Label Text="Connect with me"
+               FontSize="18"
+               TextColor="#666666"
+               HorizontalTextAlignment="Center" />
+
+        <StackLayout Padding="10" Spacing="15" HorizontalOptions="FillAndExpand">
+            <!-- LinkedIn Button -->
+            <Button Text="LinkedIn"
+                    BackgroundColor="#2867B2"
+                    TextColor="White"
+                    FontSize="18"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    Clicked="LinkedIn_Clicked"
+                    HorizontalOptions="FillAndExpand" />
+
+            <!-- Twitter Button -->
+            <Button Text="Twitter"
+                    BackgroundColor="#1DA1F2"
+                    TextColor="White"
+                    FontSize="18"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    Clicked="Twitter_Clicked"
+                    HorizontalOptions="FillAndExpand" />
+
+            <!-- GitHub Button -->
+            <Button Text="GitHub"
+                    BackgroundColor="#333333"
+                    TextColor="White"
+                    FontSize="18"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    Clicked="GitHub_Clicked"
+                    HorizontalOptions="FillAndExpand" />
+
+            <VerticalStackLayout>
+                <Frame>
+                    <Label Text=" emmanuelobakpolor6655@gmail.com" TextColor="Gold" FontSize="18" FontAttributes="Italic" ></Label>
+
+                </Frame>
+            </VerticalStackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
